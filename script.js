@@ -85,5 +85,20 @@ window.addEventListener("load", ()=>{
 });
 // año automático footer
 
-document.getElementById("anio").textContent =
+// Año automático seguro
+
+window.addEventListener("load", ()=>{
+
+let anio =
+document.getElementById("anio");
+
+
+if(anio){
+
+anio.textContent =
 new Date().getFullYear();
+
+}
+
+
+});
