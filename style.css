@@ -1,0 +1,922 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+
+html{
+scroll-behavior:smooth;
+}
+
+
+body{
+
+font-family:'Poppins',sans-serif;
+background:#f4f6f8;
+color:#222;
+
+animation:aparecer 1s forwards;
+
+overflow-x:hidden;
+
+}
+
+
+@keyframes aparecer{
+
+from{
+opacity:0;
+}
+
+to{
+opacity:1;
+}
+
+}
+
+
+/* ================= */
+/* HEADER */
+/* ================= */
+
+
+header{
+
+background:rgba(6,27,51,.97);
+
+padding:15px 8%;
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+position:sticky;
+top:0;
+z-index:1000;
+
+backdrop-filter:blur(10px);
+
+}
+
+
+
+.logo{
+
+display:flex;
+align-items:center;
+gap:15px;
+
+color:#d6b46a;
+
+}
+
+
+
+.logo-marca{
+
+width:55px;
+height:55px;
+
+border:2px solid #d6b46a;
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-family:'Playfair Display',serif;
+font-size:24px;
+
+position:relative;
+
+}
+
+
+
+.logo-marca::after{
+
+content:"⚖";
+
+position:absolute;
+
+font-size:16px;
+
+bottom:-16px;
+
+}
+
+
+
+.logo h2{
+
+font-family:'Playfair Display',serif;
+
+}
+
+
+
+.logo span{
+
+font-size:13px;
+letter-spacing:3px;
+
+}
+
+
+
+nav{
+
+display:flex;
+gap:25px;
+
+}
+
+
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+}
+
+
+
+nav a:hover{
+
+color:#d6b46a;
+
+}
+
+
+
+/* ================= */
+/* PORTADA */
+/* ================= */
+
+
+.hero{
+
+min-height:85vh;
+
+padding:8%;
+
+display:flex;
+align-items:center;
+
+background:
+
+linear-gradient(
+rgba(6,27,51,.85),
+rgba(6,27,51,.85)
+),
+
+url("img/fondo.jpg");
+
+
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+
+
+color:white;
+
+}
+
+
+
+.presentacion{
+
+max-width:700px;
+
+padding:45px;
+
+background:rgba(255,255,255,.10);
+
+backdrop-filter:blur(12px);
+
+border-radius:25px;
+
+border:1px solid rgba(255,255,255,.25);
+
+box-shadow:0 20px 50px #0008;
+
+}
+
+
+
+.presentacion h1{
+
+font-family:'Playfair Display',serif;
+
+font-size:55px;
+
+}
+
+
+
+.hero h3{
+
+color:#d6b46a;
+
+margin:15px 0;
+
+}
+
+
+
+.hero p{
+
+line-height:1.8;
+
+}
+
+
+
+.frase{
+
+margin-top:25px;
+
+font-family:'Playfair Display',serif;
+
+font-size:22px;
+
+color:#d6b46a;
+
+}
+
+
+
+/* ================= */
+/* BOTONES */
+/* ================= */
+
+
+button{
+
+padding:15px 30px;
+
+margin-top:25px;
+
+border:none;
+
+border-radius:30px;
+
+background:#d6b46a;
+
+color:#061b33;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:.3s;
+
+box-shadow:0 10px 25px #0005;
+
+}
+
+
+
+button:hover{
+
+transform:scale(1.05);
+
+}
+
+
+
+/* ================= */
+/* SECCIONES */
+/* ================= */
+
+
+section{
+
+padding:80px 10%;
+
+}
+
+
+
+section h2{
+
+font-family:'Playfair Display',serif;
+
+font-size:38px;
+
+margin-bottom:30px;
+
+color:#061b33;
+
+}
+
+
+
+#sobre{
+
+background:white;
+
+}
+
+
+
+#sobre p{
+
+max-width:900px;
+
+line-height:1.8;
+
+}
+
+
+
+/* TARJETAS */
+
+
+.contenedor{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+
+
+.card{
+
+background:white;
+
+padding:30px;
+
+border-radius:15px;
+
+border-top:5px solid #d6b46a;
+
+box-shadow:0 5px 20px #0002;
+
+transition:.3s;
+
+overflow:hidden;
+
+}
+
+
+
+.card:hover{
+
+transform:translateY(-8px);
+
+}
+
+
+
+.card h3{
+
+color:#061b33;
+
+margin-bottom:15px;
+
+}
+
+
+
+/* CONTACTO */
+
+
+#contacto{
+
+background:#061b33;
+
+color:white;
+
+text-align:center;
+
+}
+
+
+
+#contacto h2{
+
+color:#d6b46a;
+
+}
+
+
+
+.formulario{
+
+max-width:500px;
+
+margin:40px auto 0;
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+
+
+.formulario input,
+.formulario textarea{
+
+width:100%;
+
+padding:15px;
+
+border-radius:12px;
+
+border:none;
+
+font-family:'Poppins';
+
+}
+
+
+
+.formulario textarea{
+
+height:150px;
+
+resize:none;
+
+}
+
+
+
+/* WHATSAPP */
+
+
+.whatsapp{
+
+position:fixed;
+
+right:20px;
+
+bottom:20px;
+
+width:60px;
+height:60px;
+
+background:#25d366;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+justify-content:center;
+
+font-size:30px;
+
+text-decoration:none;
+
+z-index:2000;
+
+}
+
+
+
+/* FOOTER */
+
+
+footer{
+
+background:#03101f;
+
+color:white;
+
+text-align:center;
+
+padding:25px;
+
+}
+
+
+
+/* ================= */
+/* CELULAR */
+/* ================= */
+
+
+@media(max-width:700px){
+
+
+header{
+
+padding:20px;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+
+
+.logo{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+
+
+.logo h2{
+
+font-size:22px;
+
+}
+
+
+
+nav{
+
+width:100%;
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:15px;
+
+text-align:center;
+
+}
+
+
+
+nav a{
+
+font-size:14px;
+
+}
+
+
+
+.hero{
+
+padding:40px 20px;
+
+background-attachment:scroll;
+
+}
+
+
+
+.presentacion{
+
+width:100%;
+
+padding:25px;
+
+}
+
+
+
+.presentacion h1{
+
+font-size:34px;
+
+}
+
+
+
+.frase{
+
+font-size:18px;
+
+}
+
+
+
+section{
+
+padding:50px 20px;
+
+}
+
+
+
+section h2{
+
+font-size:34px;
+
+}
+
+
+
+.whatsapp{
+
+width:55px;
+
+height:55px;
+
+right:15px;
+
+bottom:15px;
+
+}
+
+
+}
+/* ================= */
+/* DATOS CONTACTO */
+/* VERSION 2.1 */
+/* ================= */
+
+
+.datos-contacto{
+
+margin:auto;
+
+max-width:600px;
+
+line-height:1.8;
+
+}
+
+
+
+.datos-contacto h3{
+
+font-family:'Playfair Display',serif;
+
+font-size:30px;
+
+color:#d6b46a;
+
+margin-bottom:15px;
+
+}
+/* ================= */
+/* ANIMACIONES SCROLL */
+/* VERSION 2.2 */
+/* ================= */
+
+
+.card,
+.presentacion,
+#sobre,
+#contacto{
+
+opacity:0;
+
+transform:translateY(40px);
+
+animation:subir .8s forwards;
+
+}
+
+
+@keyframes subir{
+
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+
+}
+/* ================= */
+/* EFECTO BOTON */
+/* ================= */
+
+
+button{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+
+button::after{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:-100%;
+
+width:100%;
+
+height:100%;
+
+background:
+linear-gradient(
+120deg,
+transparent,
+rgba(255,255,255,.5),
+transparent
+);
+
+transition:.5s;
+
+}
+
+
+button:hover::after{
+
+left:100%;
+
+}
+/* ================= */
+/* CARD PREMIUM */
+/* VERSION 2.2.1 */
+/* ================= */
+
+
+.card{
+
+position:relative;
+
+overflow:hidden;
+
+transition:
+transform .3s ease,
+box-shadow .3s ease;
+
+}
+
+
+.card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:
+0 15px 35px rgba(0,0,0,.25);
+
+}
+
+
+
+.card::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:-120%;
+
+width:100%;
+
+height:100%;
+
+
+background:
+linear-gradient(
+120deg,
+transparent,
+rgba(214,180,106,.35),
+transparent
+);
+
+
+transition:.7s;
+
+
+}
+
+
+
+.card:hover::before{
+
+left:120%;
+
+}
+/* ================= */
+/* LOGO FINAL 2.3 */
+/* ================= */
+
+
+.logo-img{
+
+width:75px;
+
+height:75px;
+
+object-fit:cover;
+
+border-radius:50%;
+
+box-shadow:
+0 0 20px rgba(214,180,106,.5);
+
+}
+/* ================= */
+/* FINAL PRO 2.4 */
+/* ================= */
+
+
+footer h3{
+
+font-family:'Playfair Display',serif;
+
+color:#d6b46a;
+
+font-size:28px;
+
+margin-bottom:10px;
+
+}
+
+
+footer p{
+
+margin:8px 0;
+
+}
+
+
+.copy{
+
+margin-top:20px;
+
+font-size:14px;
+
+opacity:.7;
+
+}
+
+
+
+/* BOTON SUBIR */
+
+
+.subir{
+
+position:fixed;
+
+right:20px;
+
+bottom:90px;
+
+width:45px;
+
+height:45px;
+
+background:#d6b46a;
+
+color:#061b33;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:25px;
+
+font-weight:bold;
+
+text-decoration:none;
+
+box-shadow:0 5px 20px #0008;
+
+z-index:2000;
+
+transition:.3s;
+
+}
+
+
+.subir:hover{
+
+transform:scale(1.15);
+
+}
+/* ================= */
+/* DETALLES 2.5 */
+/* ================= */
+
+
+::selection{
+
+background:#d6b46a;
+
+color:#061b33;
+
+}
