@@ -102,3 +102,45 @@ new Date().getFullYear();
 
 
 });
+// Compartir página web
+
+
+function compartirWeb(){
+
+
+let texto =
+"Dr. Pablo Ricardo Monti - Abogado\n\n"+
+"Asesoramiento jurídico integral en Capital Federal.\n\n"+
+"https://pablofranchesca70-bit.github.io/estudio-monti-web/";
+
+
+
+if(navigator.share){
+
+
+navigator.share({
+
+title:"Dr. Pablo Ricardo Monti - Abogado",
+
+text:texto,
+
+url:"https://pablofranchesca70-bit.github.io/estudio-monti-web/"
+
+});
+
+
+}else{
+
+
+window.open(
+
+"https://wa.me/?text="+
+encodeURIComponent(texto)
+
+);
+
+
+}
+
+
+}

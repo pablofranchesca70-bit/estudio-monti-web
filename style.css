@@ -453,7 +453,7 @@ resize:none;
 
 
 
-/* WHATSAPP */
+/* BOTONES FLOTANTES PRO */
 
 
 .whatsapp{
@@ -464,8 +464,8 @@ right:20px;
 
 bottom:20px;
 
-width:60px;
-height:60px;
+width:52px;
+height:52px;
 
 background:#25d366;
 
@@ -476,11 +476,23 @@ display:flex;
 align-items:center;
 justify-content:center;
 
-font-size:30px;
+font-size:26px;
 
 text-decoration:none;
 
+box-shadow:0 5px 15px #0007;
+
 z-index:2000;
+
+transition:.3s;
+
+}
+
+
+
+.whatsapp:hover{
+
+transform:scale(1.12);
 
 }
 
@@ -616,16 +628,17 @@ font-size:34px;
 }
 
 
-
 .whatsapp{
 
-width:55px;
+width:50px;
 
-height:55px;
+height:50px;
 
 right:15px;
 
 bottom:15px;
+
+font-size:24px;
 
 }
 
@@ -861,19 +874,15 @@ opacity:.7;
 
 
 
-/* BOTON SUBIR */
-
-
 .subir{
 
 position:fixed;
 
-right:20px;
+right:23px;
 
-bottom:90px;
+bottom:85px;
 
 width:45px;
-
 height:45px;
 
 background:#d6b46a;
@@ -884,17 +893,16 @@ border-radius:50%;
 
 display:flex;
 
+align-items:center;
 justify-content:center;
 
-align-items:center;
-
-font-size:25px;
+font-size:24px;
 
 font-weight:bold;
 
 text-decoration:none;
 
-box-shadow:0 5px 20px #0008;
+box-shadow:0 5px 15px #0007;
 
 z-index:2000;
 
@@ -918,5 +926,92 @@ transform:scale(1.15);
 background:#d6b46a;
 
 color:#061b33;
+
+}
+/* ================= */
+/* COMPARTIR WEB */
+/* VERSION 3.3 */
+/* ================= */
+
+
+.compartir{
+
+position:fixed;
+
+right:20px;
+
+bottom:145px;
+
+width:45px;
+
+height:45px;
+
+background:#061b33;
+
+color:#d6b46a;
+
+border:2px solid #d6b46a;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+justify-content:center;
+
+font-size:25px;
+
+text-decoration:none;
+
+z-index:2000;
+
+box-shadow:0 5px 20px #0008;
+
+transition:.3s;
+
+}
+
+
+.compartir:hover{
+
+transform:scale(1.15);
+
+}
+
+
+
+@media(max-width:700px){
+
+
+.compartir{
+
+right:17px;
+
+bottom:130px;
+
+width:42px;
+
+height:42px;
+
+font-size:20px;
+
+}
+
+
+
+.subir{
+
+right:17px;
+
+bottom:75px;
+
+width:42px;
+
+height:42px;
+
+font-size:22px;
+
+}
+
 
 }
