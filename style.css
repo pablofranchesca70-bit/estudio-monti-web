@@ -1015,3 +1015,83 @@ font-size:22px;
 
 
 }
+
+/* ================= */
+/* POR QUE ELEGIRNOS */
+/* VERSION 3.4 */
+/* ================= */
+
+
+#elegir{
+
+background:
+
+linear-gradient(
+rgba(6,27,51,.95),
+rgba(6,27,51,.95)
+);
+
+}
+
+
+#elegir h2{
+
+color:#d6b46a;
+
+text-align:center;
+
+}
+
+
+
+.elegir-card{
+
+background:#101820;
+
+color:white;
+
+border-top:5px solid #d6b46a;
+
+}
+
+
+
+.elegir-card h3{
+
+color:#d6b46a;
+
+}
+/* ================= */
+/* LOGO ANIMACION */
+/* VERSION 3.5 */
+/* ================= */
+
+
+.logo-img{
+
+animation:
+brilloLogo 3s infinite alternate;
+
+}
+
+
+@keyframes brilloLogo{
+
+
+from{
+
+box-shadow:
+0 0 10px rgba(214,180,106,.4);
+
+}
+
+
+to{
+
+box-shadow:
+0 0 30px rgba(214,180,106,.9);
+
+}
+
+
+}
